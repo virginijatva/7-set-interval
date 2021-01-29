@@ -1,4 +1,4 @@
 import { counter } from './components/counter.js'
 
 counter('.result');
-// counter('.result2')
+counter('.result2')

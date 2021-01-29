@@ -12,17 +12,15 @@ function counter (selector) {
     let number = parseInt(DOM.innerText);
 
     const timer = setInterval(function () {
-        showMeNumber(number);
+        DOM.innerText = number;
         number--;
         if (number < 0) {
             clearInterval(timer);
+            DOM.innerText = 'The END';
         }
     }, 1000);
 
 }
 
-function showMeNumber(num) {
-    console.log(num);
-}
 
 export { counter }
